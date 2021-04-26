@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}News{% endblock %}
+{% block extraStyleSheet %}<link rel="stylesheet" href="../static/css/news.css">{% endblock %}
+
+
+{% block shortcuts %}
+                <a href="#tournaments">Tournaments</a><br>
+                <a href="#champion">Championship</a><br>
+                <a href="@pro">Pros</a>
+{% endblock %}
+{% block content %}
+            <h3>Current Events</h3>
+            <p><a href="https://themahjongline.com" target="_blank"><img src="../static/images/news/linemahjong.jfif"  alt="The Mahjong Line's redesigned tiles"/></a>The Mahjong Line, a Dallas company has recently been under fire for "white washing" the game by making a new line of tiles that no longer resemble the original design. The company stated that the origninal design of the game
+                doesn't do it justice and was aiming to add a spark to the design with modern drawings to pull in more players. The mahjong community in Asia was reported as being upset considering they removed the chinese asthetic from a chinese game.
+            </p>
+            <div id="tournament"><h3 id="tournaments">Tournaments:</h3>
+            <ul>
+                <li><a href="https://worldriichi.org/" target="_blank">Riichi</a> GMT: 03/20/2021 <br></li>
+                <li><a href="https://mahjongtime.com/" target="_blank">MCR</a> GMT: 03/27/2021<br></li>
+                <li><a href="https://mahjongtime.com/" target="_blank">American</a> GMT: 04/03/2021<br></li>
+                <li><a href="https://mahjongtime.com/" target="_blank">Taiwanese</a> GMT: 04/10/2021<br></li>
+                <li><a href="https://mahjongtime.com/" target="_blank">Hong Kong</a> GMT: 04/17/2021<br></li>
+                <li><a href="https://destinationmahjongg.com/" target="_blank">Mah Jongg Madness</a>: 04/24/2021 - 06/12/2021<br></li>
+
+
+            </ul>
+            </div>
+            <h3 id="champion">Championship:</h3>
+            <p>This year will hold a world championship for mahjong, which doesn't happen often. A preliminary tournament will be held in Las Vegas, Nevada where 1st, 2nd, and 3rd will gain enterance into the main tournament. The buy in for the tournament is 450 dollars and so far there will be 120 players competing over the span of a week. The last prize value totaled 1 million dollars for 
+                the 2015 world championship and the venue is boasting an even bigger prize now. </p>
+                <H3 id="pro">Pros:</H3>
+                <p>In the last 13 years, the top players in proffessional mahjong have all been from China. The only player to take 1st in the world championship was a Japanese player by the name of Mai Hatsune.
+                    The second best preforming country is France who has Joel Ratsimandresy, Joel has placed in the top 3 twice in the 6 tournaments. The top preformer based on statistics would be Zhou Yong from China who has placed in first place multiple times.
+                </p>
+        </div>
+{% endblock %}
+    <br><br><br>

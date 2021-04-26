@@ -1,0 +1,10 @@
+#content div .hand{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: none; 
+}
+
+.hand img{
+   width: 7.5%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midwest Majong</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/common/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/global.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="../static/images/common/westwind.png" alt="west wind">
+            <img src="../static/images/common/southwind.png" alt="south wind">
+            <p>Midwest Mahjong</p>
+            <img src="../static/images/common/northwind.png" alt="north wind">
+            <img src="../static/images/common/eastwind.png" alt="east wind">
+        </div>
+    </div>
+    <div id="locations">
+        
+       <div><a href="{{ url_for('basics') }}">Basics</a></div>
+        <div><a href="{{ url_for('hands') }}">Hands</a></div>
+        <div><a href="{{ url_for('rules') }}">Rules</a> </div>
+        <div><a href="{{ url_for('scoring') }}">Scoring</a> </div>
+        <div><a href="{{ url_for('strategy') }}">Strategy</a> </div>
+        <div><a href="{{ url_for('platforms') }}">Platforms</a> </div>
+        <div><a href="{{ url_for('variations') }}">Variations</a> </div>
+        <div><a href="{{ url_for('history') }}">History</a> </div>
+        <div><a href="{{ url_for('news') }}">News</a> </div>
+        <div><a href="{{ url_for('misc') }}">Misc</a> </div>
+    </div>
+</body>
+</html>

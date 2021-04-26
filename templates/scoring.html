@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block title %}Scoring{% endblock %}
+{% block extraStyleSheet %}<link rel="stylesheet" href="../static/css/scoring.css">{% endblock %}
+
+{% block shortcuts %}
+    <a href="#han">Han<br></a>
+    <a href="#fu">Fu<br></a>
+    <a href="#chart">Chart<br></a>
+    <a href="#calc">Calculations</a>
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <p style=" font-size: large;width: 100%;"><b>Scoring:</b></p>
+        <p>Scoring is kept track of with sticks that resemble chinese dominos.</p>
+        <ul>
+            <li>10000 Points: <img src="../static/images/scoring/10000.png" alt="sticks" ><br></li>
+            <li>5000 Points: <img src="../static/images/scoring/5000.png" alt="sticks"><br></li>
+            <li>1000 Points: <img src="../static/images/scoring/1000.png" alt="sticks"><br></li>
+            <li>100 Points: <img src="../static/images/scoring/100.png" alt="sticks"></li>
+        </ul>
+        <p>There are two criteria in determining the winning points: han and fu, which correspond to a points table. Han is the unit for the value of yaku, which are particular patterns or conditions of a hand. Fu is the value of melds, waits and "going out".</p>
+        <h3 id="han">Han:</h3>
+        <p>The total han in hand is summed up at the end. Dora are worth 1 han but can not count toward a complete hand and instead only increase the value of the hand. If you have
+            a variety of winning hand melds you take the combination of the highest value hand as your han value. If your hand is opened by calling chi or pon then reduce your han value by 1.
+            If your han value is greater than 5 then disregard the fu and assign a point total of mangan or higher.
+        </p>
+        <h3 id="fu">Fu:</h3>
+        <p>Fu is rounded up to the nearest ten. If the han value is lower than a mangan but the fu raises the value higher than a mangan then the player is awarded a mangan.</p>
+        <div><h3>Calculating Fu:</h3>
+            <ol>
+                <li>A winning hand is automatically awarded 20 fu. <br></li>
+                <li>Ten fu are added if one wins by claiming a discarded tile with a closed hand.<br></li>
+                <li>Add fu of the melds and the pair.<br></li>
+                <li>Add 2 fu if waiting on a pair<br></li>
+                <li>Add 2 fu if one wins by self-draw.<br></li>
+                <li>Winning with yaku which include seven pairs is counted as 25 fu altogether. <br></li>
+                <li>If you hand is worth no fu then it is awarded 30 fu instead.<br></li>
+            </ol>
+        </div>
+        <table id="chart">
+            <tr>
+                <td></td>
+                <th>Simple Tiles</th>
+                <th>Terminal/Honor Tiles</th>
+            </tr>
+            <tr>
+                <td>Open Triplet</td>
+                <td>2 fu</td>
+                <td>4 fu</td>
+            </tr>
+            <tr>
+                <td>Closed Triplet</td>
+                <td>4 fu</td>
+                <td>8 fu</td>
+            </tr>
+            <tr>
+                <td>Open Quad</td>
+                <td>8 fu</td>
+                <td>16 fu</td>
+            </tr>
+            <tr>
+                <td>Closed Quad</td>
+                <td>16 fu</td>
+                <td>32 fu</td>
+            </tr>
+            <tr>
+                <td>Sequece</td>
+                <td>0 fu</td>
+                <td>0 fu</td>
+            </tr>
+            <tr>
+                <td>Pairs</td>
+                <td>2 fu</td>
+                <td>2 fu</td>
+            </tr>
+        </table>
+        <h3 id="calc">Calculations:</h3>
+        <p>The basic points of a hand is calculated as follows:<br><br>
+
+            [ basic points = fu × 2(2+han) ]<br><br>
+            When a non-dealer goes out by self-draw, the dealer pays the winner 2 × basic points, and the other two non-dealers pay the winner 1 × basic points.<br>
+            When a non-dealer goes out by discard, the discarding player pays the winner 4 × basic points.<br>
+            When the dealer goes out by self-drawn, all the three non-dealers pay the winner 2 × basic points.<br>
+            When the dealer goes out by discard, the discarding non-dealer pays the winner 6 × basic points.<br><br>
+            The actual points given are rounded up to the nearest 100. Even if the values of han and fu are the same, the points received for self-draw wins often slightly deviate from those received for discard wins because of rounding.</p>
+            </div>
+{% endblock %}

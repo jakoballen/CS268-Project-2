@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block title %}Rules{% endblock %}
+
+
+{% block shortcuts %}
+ <a href="#swap">Swap-Calling<br></a>
+                    <a href="#tenpai">Tenpai<br></a>
+                    <a href="#furiten">Furiten<br></a>
+                    <a href="#chombo">Chombo<br></a>
+                    <a href="#deadhand">Dead Hand<br></a>
+                    <a href="#abort">Abortive Draw<br></a>
+{% endblock %}
+
+{% block content %}
+    <h1>Rules:</h1>
+    <p>Mahjong has several special rules to keep track of while playing outside of the ordinary rule set. These typically determine when a reset is required or
+        when a penalty should be issued out.
+    </p>
+    <h3 id="swap">Swap-calling</h3>
+    <p>Swap-calling (kuikae) is not allowed. It is not allowed to claim a tile and immediately discard the same tile. It is not
+        allowed to claim a tile for chi and discard the tile from other end of the chow.</p>
+    <h3 id="tenpai">Tenpai:</h3>
+    <p>A player is in tenpai when they are 1 tile from a complete hand, players not in tenpai by the end of a draw must pay a 1000-3000 point penalty to those who are.</p>
+    <h3 id="furiten">Furiten</h3>
+    <p>If a waiting player can form a hand using one of his previous discards, he is furiten and is not allowed to claim
+        a win on a discard, even if the hand completed with the previous discard is without a han. Players in Furtien are still able to win on a self draw.
+        A player who fails to claim a win on a discard that completes a mahjong hand, is temporarily furiten, even if the passed
+        tile gives him no yaku, and he cannot claim a win on a discard in the current set of turns. The state of temporary furiten
+        ends next time the player draws or claims a tile. However, if the player has declared riichi he remains temporarily
+        furiten until the end of the hand.</p>
+    <h3 id="chombo">Chombo:</h3>
+    <p>Chombo is a penalty payment to all of the other players totaling a mangan value of 8000 points. There are several ways to trigger Chombo. If you are the dealer and commit a
+        penalty the payment is increased to a haneman of 12000 points.
+    </p>
+    <div>
+        <h3>Punishable Offenses:</h3>
+        <ol>
+            <li>Invalidly declaring a win and showing the tiles. The win can be invalid because the hand is not a valid
+                winning hand or because the declaration was not valid<br></li>
+            <li>Declaring riichi on a hand that is not waiting. This is determined only in case of a drawn game. In the
+                case where a valid riichi hand is only considered noten because it was declared a dead hand after the
+                riichi declaration, it is not considered a chombo, and only the noten penalty is paid<br></li>
+            <li>Making an invalid concealed kan after declaring riichi (determined only if the offender declares a
+                win or in case of a drawn game). <br></li>
+            <li>Attempting to claim a tile after the hand has been declared a dead hand.<br></li>
+            <li>Play cannot continue due to a mistake of a player. E.g. too many tiles were revealed for the game to
+                continue fairly</li>
+        </ol>
+    </div>
+    <h3 id="deadhand">Dead Hand:</h3>
+    <p>Some irregularities that are not punished by chombo result instead in a dead hand. A player who has a dead hand is
+        not allowed to declare a win, kong, pung or chow, and can never be considered tenpai.</p>
+    <div><h3>Conditions For Dead Hand:</h3>
+
+        <ol>
+            <li>Invalidly declaring a win without showing the tiles.<br></li>
+            <li>Attempting to declare riichi on a open hand.<br></li>
+            <li>Attempting to declare riichi, but failing to call “riichi” or failing to rotate the discard. <br></li>
+            <li>Too few or too many tiles on the hand.<br></li>
+            <li>Making an invalid kong, pung or chow. The mistake can be corrected if it is realized or pointed out
+                before the discard is made. <br></li>
+            <li>Swap-calling.<br></li>
+            <li>A referee call may result in a dead hand, e.g. for passing information.</li>
+        </ol>
+    </div>
+    <h3 id="abort">Abortive Draws:</h3>
+    <p>Abortive draws are no longer officially supported in tournament play, however many locals still play by these rules. In the event that 5 kans are called in one round then that round is finished
+        after. In the event that every player discards the same wind in a row then end the round. If a player draws 9 different terminal or honor tiles in his opening hand he may declare a reset. If all players
+        declare riichi in the same round reset. Lastly if 3 players declare ron on one discard then reset.
+    </p>
+    </div>
+{% endblock %}
+{% block footnotes %}
+                <h3>Useful Links:</h3>
+                    <a href="https://web.archive.org/web/20130425060939/http://www.garethjmsaunders.co.uk/mahjong/rules.html" target="_blank">Mahjong Rules</a>
+{% endblock %}

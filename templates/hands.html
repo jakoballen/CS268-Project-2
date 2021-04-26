@@ -1,0 +1,283 @@
+{% extends "layout.html" %}
+{% block title %}Hands{% endblock %}
+    {% block extraStyleSheet %}<link rel="stylesheet" href="../static/css/hand.css">{% endblock %}
+
+{% block shortcuts %}
+                <a href="#sevenpairs">Seven Pairs</a><br>
+                <a href="#no-points">No-Points</a><br>  
+                <a href="#identical">Identical set</a><br>
+                <a href="#identical2">Two Identical Sets</a><br>                       
+                <a href="#Tcs">Three Color Straight</a><br>                       
+                <a href="#straight">Straight</a><br>                    
+                <a href="#triplet">All Triplet</a><br>
+                <a href="#Closedtriplet">Closed Triplet</a><br>
+                <a href="#TcT">Three Color Triplet</a><br>
+                <a href="#threekan">Three Kans</a><br>  
+                <a href="#simples">All Simples</a><br>
+                <a href="#honor">Honor Tiles</a><br>                       
+                <a href="#terminalhonor">Terminal Honor Tiles</a><br>                       
+                <a href="#terminalset">Terminal sets</a><br>                    
+                <a href="#allterminalhonor">All Terminal Honors</a><br>
+                <a href="#littledragon">Little Dragon</a><br>
+                <a href="#halfflush">Half-Flush</a><br>
+                <a href="#flush">Flush</a>  <br>
+                <a href="#orphan">Thirteen Orphans</a><br>
+                <a href="#4Closedtriplet">Four Concealed Triplets</a><br>                       
+                <a href="#bigdragon">Big dragon</a><br>                       
+                <a href="#littlewind">Little winds</a><br>                    
+                <a href="#bigwind">Big Winds</a><br>
+                <a href="#allhonor">All Honors</a><br>
+                <a href="#allterminal">All Terminals</a><br>
+                <a href="#allgreen">All Green</a><br>  
+                <a href="#gates">Nine Gates</a><br>
+{% endblock %}
+{% block content %}
+
+                <div><h3 id="sevenpairs">Seven Pairs (chiitoitsu) Closed: 2 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" >
+                        <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile">
+                        <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot2.png" alt="Image of dot 2 tile">
+                        <img src="../static/images/hands/dot2.png" alt="Image of dot 2 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile">
+                        <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/south.png" alt="Image of south tile">
+                        <img src="../static/images/hands/south.png" alt="Image of south tile">
+                    </div>
+                    
+                    <p>A hand composed of seven pairs is considered a valid hand in Japanese mahjong. The hand is one of the two exceptions to the rule requiring winning hands to have four melds and a pair, the other being thirteen orphans.</p>
+                </div>
+                <div><h3 id="no-points">No-Points hand (pinfu) Closed: 1 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character3.png" alt="Image of character 3 tile"> <img src="../static/images/hands/character4.png" alt="Image of character 4 tile">
+                        <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot4.png" alt="Image of dot 4 tile"> <img src="../static/images/hands/dot5.png" alt="Image of dot 5 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>This is a very common yaku, since it is rather easy to get. A no-points hand is just that — a hand that is worth no additional fu-points whatsoever. specifically, the hand must have no triplets or quads, and must not contain any pair of dragons, player's own wind, or wind of the round which is worth points, meaning the pair can be other winds.</p>
+                </div>
+                <div><h3 id="identical">One set of identical sequences (iipeikou) Closed: 1 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile"> <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">
+                        <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile"> <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile"> <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot4.png" alt="Image of dot 4 tile"> <img src="../static/images/hands/dot5.png" alt="Image of dot 5 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>One set of two sequences of the same numbers in the same suit.</p>
+                </div>
+                <div><h3 id="identical2">Two sets of identical sequences (ryankeikou) Closed: 3 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">  <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">
+                        <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile"> <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile"> <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot4.png" alt="Image of dot 4 tile">
+                        <img src="../static/images/hands/dot4.png" alt="Image of dot 4 tile"> <img src="../static/images/hands/dot5.png" alt="Image of dot 5 tile"> <img src="../static/images/hands/dot5.png" alt="Image of dot 5 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>Two independent sets of identical sequences. some rules may not allow the two sets to be the same using four identical sequences. The seven pairs yaku is not counted in this case, because this yaku is actually composed of sequential melds, rather than pairs.</p>
+                </div>
+                <div><h3 id="Tcs">Three color straight (sanshoku) Open: 1-2 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character3.png" alt="Image of character 3 tile">
+                        <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot2.png" alt="Image of dot 2 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>Three sequences of the same numbers in all three suits.</p>
+                </div>
+                <div><h3 id="straight">Straight (ittsuu) Open: 1-2 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo5.png" alt="Image of bamboo 5 tile"> <img src="../static/images/hands/bamboo6.png" alt="Image of bamboo 6 tile">
+                        <img src="../static/images/hands/bamboo7.png" alt="Image of bamboo 7 tile"> <img src="../static/images/hands/bamboo8.png" alt="Image of bamboo 8 tile"> <img src="../static/images/hands/bamboo9.png" alt="Image of bamboo 9 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>A straight from number 1 through 9 of one suit, namely, three sequences of 1-2-3, 4-5-6 and 7-8-9.</p>
+                </div>
+                <div><h3 id="triplet">All triplet hand (toitoi) Open: 2 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">  <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">
+                        <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile">
+                        <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>The hand consists of all triplets or quads; no sequences. If all four triplets/quads are Closed, this hand will become suu ankou ( four Closed triplets ) worth yakuman instead .</p>
+                </div>
+                <div><h3 id="Closedtriplet">Three closed triplets (san ankou) Open: 2 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">  <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">
+                        <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile">
+                        <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>Three sets of triplets or quads formed without calling on any tiles. The tiles for the three triplets or quads must all be self-drawn in order to count. The fourth set can be an open triplet or quad, or a sequence.</p>
+                </div>
+
+                <div><h3 id="TcT">Three color triplets (sanshoku doukou) Open: 2 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">  <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">
+                        <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile">
+                        <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>Three triplets consisting of the same numbers in all three suits.</p>
+                </div>
+                <div><h3 id="threekan">Three kans (san kantsu) Open: 2 Han</h3>
+                    <div class="hand" style="width: 75%;"><img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">  <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">
+                        <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile">
+                        <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>Three quads in one hand, which can be open or Closed.</p>
+                </div>
+                <div><h3 id="simples">All simples (tan'yao) Open: 1 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile" > <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">  <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                        <img src="../static/images/hands/character3.png" alt="Image of character 3 tile"> <img src="../static/images/hands/character4.png" alt="Image of character 4 tile"> <img src="../static/images/hands/character5.png" alt="Image of character 5 tile">
+                        <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile">
+                        <img src="../static/images/hands/dot6.png" alt="Image of dot 6 tile"> <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>Tan'yaochuu literally means "no 1's or 9's". Only numbered tiles from 2 through 8 are used eliminating terminals or honors. If the hand is open, it is called "kuitan" (喰い断), which means tan'yao made by "eating" discards. As there are varieties of rules, this hand can be Closed only. The rule that does not allow kuitan is called "kuitan nashi" (喰い断無し; no kuitan, or kuitan invalid).</p>
+                </div>
+                <div><h3 id="honor">Honor Tiles (yakuhai) Open: 1 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character3.png" alt="Image of character 3 tile"> <img src="../static/images/hands/character4.png" alt="Image of character 4 tile">
+                        <img src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"> <img src="../static/images/hands/dot4.png" alt="Image of dot 4 tile"> <img src="../static/images/hands/dot5.png" alt="Image of dot 5 tile">
+                        <img src="../static/images/hands/Red.png" alt="Image of Red tile"> <img src="../static/images/hands/Red.png" alt="Image of Red tile"> <img src="../static/images/hands/Red.png" alt="Image of Red tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>Any triplets or quads of dragons, the player's wind and the prevailing wind. If a wind is both the player's wind and the prevailing wind, it is worth two han per group.</p>
+                </div>
+                <div><h3 id="terminalhonor">Terminal or Honor Tiles In each set (chanta) Open: 1-2 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character3.png" alt="Image of character 3 tile">
+                        <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/east.png" alt="Image of east tile"> <img src="../static/images/hands/east.png" alt="Image of east tile">
+                    </div>
+                    <p>The sequences in the hand must be 1-2-3 and 7-8-9, and triplets and the pair must be 1's, 9's and honor tiles. The hand contains at least one sequence.</p>
+                </div>
+                <div><h3 id="terminalset">Terminal In each set (junchan) Open: 2-3 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character3.png" alt="Image of character 3 tile">
+                        <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile">
+                        <img src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"> <img src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">
+                    </div>
+                    <p>The jun in junchan literally means "pure." As such, no honor tiles are included. The sequences must be 1-2-3 and 7-8-9, and triplets and the pair must be 1's and 9's. The hand has at least one sequence.</p>
+                </div>
+                <div><h3 id="allterminalhonor">All Terminal and Honors (honrou) Open: 4 Han</h3>
+                    <div class="hand"><img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">  <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">
+                        <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile">
+                        <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile">
+                        <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/east.png" alt="Image of east tile"> <img src="../static/images/hands/east.png" alt="Image of east tile">
+                    </div>
+                    <p>The hand consists of all terminals and honors.</p>
+                </div>
+                <div><h3 id="littledragon">Little Three Dragons (shousangen) Open: 4 Han</h3>
+                    <div class="hand"><img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character3.png" alt="Image of character 3 tile"> <img src="../static/images/hands/character4.png" alt="Image of character 4 tile">
+                        <img src="../static/images/hands/Green.png" alt="Image of Green tile"> <img src="../static/images/hands/Green.png" alt="Image of Green tile"> <img src="../static/images/hands/Green.png" alt="Image of Green tile">
+                        <img src="../static/images/hands/Red.png" alt="Image of Red tile"> <img src="../static/images/hands/Red.png" alt="Image of Red tile"> <img src="../static/images/hands/Red.png" alt="Image of Red tile">
+                        <img src="../static/images/hands/white.png" alt="Image of white tile"> <img src="../static/images/hands/white.png" alt="Image of white tile">
+                    </div>
+                    <p>Two triplets or quads of dragons, plus a pair of the third.</p>
+                </div>
+                <div><h3 id="halfflush">Half-Flush (hon'itsu) Open: 2-3 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo5.png" alt=""> <img src="../static/images/hands/bamboo6.png" alt="Image of bamboo 6 tile">
+                        <img src="../static/images/hands/east.png" alt="Image of east tile"> <img src="../static/images/hands/east.png" alt="Image of east tile"> <img src="../static/images/hands/east.png" alt="Image of east tile">
+                        <img src="../static/images/hands/white.png" alt="Image of white tile"> <img src="../static/images/hands/white.png" alt="Image of white tile"> <img src="../static/images/hands/white.png" alt="Image of white tile">
+                        <img src="../static/images/hands/south.png" alt="Image of south tile"> <img src="../static/images/hands/south.png" alt="Image of south tile">
+                    </div>
+                    <p>The hand contains tiles from one suit and honors. The honors can be two or more sets. The hand can be seven pairs.</p>
+                </div>
+                <div><h3 id="flush">Flush (chin'itsu) Open: 5-6 Han</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                        <img src="../static/images/hands/bamboo5.png" alt=""> <img src="../static/images/hands/bamboo6.png" alt="Image of bamboo 6 tile"> <img src="../static/images/hands/bamboo7.png" alt="Image of bamboo 7 tile">
+                        <img src="../static/images/hands/bamboo8.png" alt="Image of bamboo 8 tile"> <img src="../static/images/hands/bamboo8.png" alt="Image of bamboo 8 tile"> <img src="../static/images/hands/bamboo8.png" alt="Image of bamboo 8 tile">
+                        <img src="../static/images/hands/bamboo9.png" alt="Image of bamboo 9 tile"> <img src="../static/images/hands/bamboo9.png" alt="Image of bamboo 9 tile">
+                    </div>
+                    <p>All tiles in the hand are exclusively of one suit with no honor tiles.</p>
+                </div>
+                
+                <div><h3 id="orphan">Thirteen Orphans (kokushi musou) Closed: Limit - double Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo9.png" alt="Image of bamboo 9 tile">  <img src="../static/images/hands/character1.png" alt="Image of character 1 tile">
+                        <img src="../static/images/hands/character9.png" alt="Image of character 9 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/east.png" alt="Image of east tile"> <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/west.png" alt="Image of west tile">
+                        <img src="../static/images/hands/south.png" alt="Image of south tile"> <img src="../static/images/hands/Green.png" alt="Image of Green tile"> <img src="../static/images/hands/Red.png" alt="Image of Red tile">
+                        <img src="../static/images/hands/white.png" alt="Image of white tile"> <img src="../static/images/hands/white.png" alt="Image of white tile">
+                    </div>
+                    <p>The Japanese name of the yaku, kokushi musou, means "a peerless distinguished person in a country."[9] Along with seven pairs (chii Toitsu), this is the second hand that contradicts the requirement for a hand to have four melds and a pair. In a thirteen orphans hand, the player has one of each dragon tile, one of each wind tile, a 1 and a 9 (terminal) from each suit, plus any tile that matches anything else in the hand. If a player wins in a 13-way wait for the pair, the hand is worth two yakuman, which is called daburu (double) yakuman.</p>
+                </div>
+                <div><h3 id="4Closedtriplet">Four Concealed Triplets (suu ankou) Closed: Limit - double Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">  <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">
+                        <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character2.png" alt="Image of character 2 tile">
+                        <img src="../static/images/hands/dot4.png" alt="Image of dot 4 tile"> <img src="../static/images/hands/dot4.png" alt="Image of dot 4 tile"> <img src="../static/images/hands/dot4.png" alt="Image of dot 4 tile">
+                        <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile"> <img src="../static/images/hands/dot9.png" alt="Image of dot 9 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>A hand that has four Closed triplets/quads. If the hand has two pairs left when it is one tile away from winning, it can only qualify with a tile drawn off the wall as a yakuman hand. In the case of a single-tile wait for the pair, the tile can either be self-drawn or won from another player's discard, and it is worth two yakuman.</p>
+                </div>
+                <div><h3 id="bigdragon">Big Three Dragons (daisangen) Open: Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/Green.png" alt="Image of Green tile"> <img src="../static/images/hands/Green.png" alt="Image of Green tile"> <img src="../static/images/hands/Green.png" alt="Image of Green tile">
+                        <img src="../static/images/hands/Red.png" alt="Image of Red tile"> <img src="../static/images/hands/Red.png" alt="Image of Red tile"> <img src="../static/images/hands/Red.png" alt="Image of Red tile">
+                        <img src="../static/images/hands/white.png" alt="Image of white tile"> <img src="../static/images/hands/white.png" alt="Image of white tile"> <img src="../static/images/hands/white.png" alt="Image of white tile">
+                        <img src="../static/images/hands/east.png" alt="Image of east tile"> <img src="../static/images/hands/east.png" alt="Image of east tile">
+                    </div>
+                    <p>A triplet or quad of each type of dragon tile.</p>
+                </div>
+                <div><h3 id="littlewind">Little Four Winds (shousuushii) Open: Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/east.png" alt="Image of east tile"> <img src="../static/images/hands/east.png" alt="Image of east tile"> <img src="../static/images/hands/east.png" alt="Image of east tile">
+                        <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/north.png" alt="Image of north tile">
+                        <img src="../static/images/hands/west.png" alt="Image of west tile"> <img src="../static/images/hands/west.png" alt="Image of west tile"> <img src="../static/images/hands/west.png" alt="Image of west tile">
+                        <img src="../static/images/hands/south.png" alt="Image of south tile"> <img src="../static/images/hands/south.png" alt="Image of south tile">
+                    </div>
+                    <p>A hand consisting of three triplets/quads of winds and a pair of the fourth wind.</p>
+                </div>
+                <div><h3 id="bigwind">Big Four Winds (daisuushii) Open: Double Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/east.png" alt="Image of east tile" > <img src="../static/images/hands/east.png" alt="Image of east tile">  <img src="../static/images/hands/east.png" alt="Image of east tile">
+                        <img src="../static/images/hands/west.png" alt="Image of west tile"> <img src="../static/images/hands/west.png" alt="Image of west tile"> <img src="../static/images/hands/west.png" alt="Image of west tile">
+                        <img src="../static/images/hands/south.png" alt="Image of south tile"> <img src="../static/images/hands/south.png" alt="Image of south tile"> <img src="../static/images/hands/south.png" alt="Image of south tile">
+                        <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/north.png" alt="Image of north tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                    </div>
+                    <p>A hand consisting of four triplets/quads of winds. It can be worth one or two yakuman in some rules. Little four winds (shousuushii) and this yaku are kinds of suushiihou (四喜和)</p>
+                </div>
+                <div><h3 id="allhonor">All Honors (tsuuiisou) Open: Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/white.png" alt="Image of white tile" > <img src="../static/images/hands/white.png" alt="Image of white tile">  <img src="../static/images/hands/white.png" alt="Image of white tile">
+                        <img src="../static/images/hands/west.png" alt="Image of west tile"> <img src="../static/images/hands/west.png" alt="Image of west tile"> <img src="../static/images/hands/west.png" alt="Image of west tile">
+                        <img src="../static/images/hands/south.png" alt="Image of south tile"> <img src="../static/images/hands/south.png" alt="Image of south tile"> <img src="../static/images/hands/south.png" alt="Image of south tile">
+                        <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/north.png" alt="Image of north tile"> <img src="../static/images/hands/north.png" alt="Image of north tile">
+                        <img src="../static/images/hands/Green.png" alt="Image of Green tile"> <img src="../static/images/hands/Green.png" alt="Image of Green tile">
+                    </div>
+                    <p>A hand composed exclusively of wind and dragon tiles.</p>
+                </div>
+                <div><h3 id="allterminal">All Terminals (chinroutou) Open: Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" > <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">  <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile">
+                        <img src="../static/images/hands/bamboo9.png" alt="Image of bamboo 9 tile"> <img src="../static/images/hands/bamboo9.png" alt="Image of bamboo 9 tile"> <img src="../static/images/hands/bamboo9.png" alt="Image of bamboo 9 tile">
+                        <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile">
+                        <img src="../static/images/hands/character9.png" alt="Image of character 9 tile"> <img src="../static/images/hands/character9.png" alt="Image of character 9 tile"> <img src="../static/images/hands/character9.png" alt="Image of character 9 tile">
+                        <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"> <img src="../static/images/hands/dot1.png" alt="Image of dot 1 tile">
+                    </div>
+                    <p>A hand containing only 1's and 9's (terminals).</p>
+                </div>
+                <div><h3 id="allgreen">All Green (ryuuiisou) Open: Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile" > <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">  <img src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile">
+                        <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile"> <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile"> <img src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile">
+                        <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"> <img src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile">
+                        <img src="../static/images/hands/bamboo6.png" alt="Image of bamboo 6 tile"> <img src="../static/images/hands/bamboo6.png" alt="Image of bamboo 6 tile"> <img src="../static/images/hands/bamboo6.png" alt="Image of bamboo 6 tile">
+                        <img src="../static/images/hands/Green.png" alt="Image of Green tile"> <img src="../static/images/hands/Green.png" alt="Image of Green tile">
+                    </div>
+                    <p>A hand containing only green tiles. Green tiles are: 2, 3, 4, 6, 8 of bamboo, and green dragons. Many of the Japanese sets exclusively color those tiles as green only. The other bamboo tiles of 1, 5, 7, and 9 have red paint on them, thereby not making them all green. Although the hand can include green dragons, it does not have to.</p>
+                </div>
+                <div><h3 id="gates">Nine Gates (chuuren poutou) Closed: Limit - double Limit</h3>
+                    <div class="hand"> <img src="../static/images/hands/character1.png" alt="Image of character 1 tile" > <img src="../static/images/hands/character1.png" alt="Image of character 1 tile">  <img src="../static/images/hands/character1.png" alt="Image of character 1 tile">
+                        <img src="../static/images/hands/character2.png" alt="Image of character 2 tile"> <img src="../static/images/hands/character3.png" alt="Image of character 3 tile"> <img src="../static/images/hands/character4.png" alt="Image of character 4 tile">
+                        <img src="../static/images/hands/character5.png" alt="Image of character 5 tile"> <img src="../static/images/hands/character6.png" alt="Image of character 6 tile"> <img src="../static/images/hands/character7.png" alt="Image of character 7 tile">
+                        <img src="../static/images/hands/character8.png" alt="Image of character 8 tile"> <img src="../static/images/hands/character9.png" alt="Image of character 9 tile"> <img src="../static/images/hands/character9.png" alt="Image of character 9 tile">
+                        <img src="../static/images/hands/character9.png" alt="Image of character 9 tile"> <img src="../static/images/hands/character9.png" alt="Image of character 9 tile">
+                    </div>
+                    <p>A hand composed of 1-1-1-2-3-4-5-6-7-8-9-9-9 of one suit, plus any other tile of the same suit.</p>
+                </div>
+{% endblock %}

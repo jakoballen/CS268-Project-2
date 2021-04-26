@@ -1,0 +1,7 @@
+#content img{
+    float: left;
+    width: 200px;
+    margin: 10px;
+    border-bottom: 10px solid rgb(78, 53, 36);
+    border-left: 10px solid rgb(131, 91, 65) ;
+}

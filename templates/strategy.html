@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block title %}Strategy{% endblock %}
+
+
+{% block shortcuts %}
+                    <a href="#offense">Offense</a><br>
+                    <a href="#defense">Defense</a><br>
+                    <a href="#speed">Speed</a><br>
+                    <a href="#tips">Tips</a><br>
+                    <a href="#caution">Caution</a><br>
+{% endblock %}
+
+{% block content %}
+    <h3>Strategy:</h3>
+    <p>Strategy in mahjong can be broken into 3 parts, each holding an equal amount of importance. There's speed, offense, and defense. When playing a round of mahjong it is
+        important to consider changing your strategy depending on the flow of the game.</p>
+    <ol>
+        <li><h3 id="offense">Offense:</h3>
+            <p>Playing offensively revolves around going for rare large hand totals. This ussually results in a slower play style. It's a good idea to go for this while behind to cause an upset.
+                There is a degree of risk in playing aggressively, for instance if it's late into the game and you draw a red dragon that you want to discard to maintain a big hand but no one has discarded red dragon yet
+                then you run a large risk of dealing into someone's hand. The same goes for when a player declares riichi, the smart play would be to discard tiles that are in his discard pile because you know those are safe.
+                However, the aggressive play would be to maintain the hand you want and discard what doesn't work for you, even if it could be what the riichi player is waiting on.
+            </p></li>
+        <li> <h3 id="defense">Defense:</h3>
+            <p>The opposite of offensive play is defensive play. This idea revolves around avoiding dealing into peoples hands To do this look at the discard pile and throw out tiles that you see while
+                trying to maintain a winning hand yourself. Most hands formed like this have low point totals and are easy to make, so if you are in the lead it is a good idea. If you are playing defensively,
+                it is a good idea to not hold onto the dora tiles early on unless you know you are going to be able to use them. Dora tiles are heavily sought after and many players like to wait on them. While
+                playing defensively, you run the risk of breaking your tenpai and if you do at the end of a draw then you will have to pay out a penaty fee. The benifit to this is that the fee is relatively small
+                compared to most hands that you might deal into.
+            </p></li>
+        <li>  <h3 id="speed">Speed</h3>
+            <p>The last factor into strategy is how fast you play. If you go for simple hands and wait on common tiles you can end the 4 round game of mahjong fairly quick, but if you do
+                try to get an early lead. Playing fast works so long as luck is in your favor, but this playstyle can lead to several upsets. If you win 3 hands with low point totals, all it takes is
+                a player going for something big to pass you up.</p> </li>
+    </ol>
+    <h3 id="tips">Tips:</h3>
+    <p>Don't be afraid to change your waits if you aren't getting any discards or good draws the game revolves around a good bit of luck. If there are very few tiles left, try and get into
+        tenpai even if the hand can't win. Don't call riichi near the end of a round if you don't have the points to spare.
+    </p>
+
+    <h3 id="caution">Caution:</h3>
+    <p>When playing be warry of how much of your hand is shown. If you steal too often it can be pretty obvious what tiles you're waiting on. For example, if you have 3 visble melds that are all
+        different suits numbered 2-8, then other players will stop discarding simples out of fear that they'll give you a winning tile. Also, if you're hand is closed still avoid seperating your hand into
+        groups of threes, you'd be helping your opponent know how close you are to a complete hand.
+    </p>
+{% endblock %}

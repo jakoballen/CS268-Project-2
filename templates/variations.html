@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block title %}Variations{% endblock %}
+
+
+{% block shortcuts %}
+    <a href="#china">Chinese Mahjong</a><br>
+    <a href="#hk">Hong Kong</a><br>
+    <a href="#japan">Japanese Mahjong</a><br>
+    <a href="#west">Western Mahjong</a><br>
+{% endblock %}
+
+{% block content %}
+        <h3>Different Types of Mahjong:</h3><br>
+        <p>There are 4 well known variations of Mahjong that you can play: Chinese, Cantonese, Japanese, and Western.</p>
+        <ol>
+            <li>
+                <h4 id="china">Chinese Mahjong:</h4><p>Chinese Classical Mahjong is known to be the oldest version of the game. This was the first mahjong game version introduced in America and became the model for many forms that were created since then.
+                This form of mahjong focuses on simplicity and does not have many hands that you can make, this slows down the pace of the game. Compared to the other versions both Chinese and Hong Kong mahjong have extra tiles called bonus tiles.
+                They are marked with 4 types of flowers and 4 different seasons.</p>
+                <img src="../static/images/variations/flowertiles.jpg" alt="flower tiles" style="width: 45%; border-left: 10px solid ivory; margin: 0;border-top: 5px solid ghostwhite;"><img src="../static/images/variations/floraltiles.jpg" alt="seasons" style="width: 45%; border-top: 5px solid ghostwhite; margin: 0;border-collapse: collapse;">
+
+            </li>
+
+            <li>
+                <h4 id="hk">Cantonese Mahjong:</h4><p>Cantonese Mahjong also goes by the name of Hong Kong Mahjong game. It is the most common variety and only posses slight differences as compared with the classical version. Like Chinese mahjong this version has bonus tiles that
+                Japanese and Western versions don't have. Unlike other tiles these are not used for melds. Instead when one is drawn it is placed seperate from your stack and you draw again. If you win with one in your possesion, you get more points. It is common in
+                this version for players to make small bets ranging from 1-15 dollars.
+            </p>
+            </li>
+            <li>
+                <h4 id="japan">Japanese Mahjong:</h4><p>Japanese Mahjong is the most commonly used form of mahjong game among Japanese. This includes rules and scoring guidelines that have been standardized and used in video games. The riichi and dora mark the highlights of the game.
+                Of all of the different variations of mahjong, Japanese Mahjong is the only format the holds tournaments. This version is most popular in Japan but has been gaining attention in the US. Unlike other versions this mahjong also has red tiles for
+                every 5 that is worth an additional han.  </p>
+                <div style="display: flex; flex-direction: row; background-color: wheat;box-shadow: none;margin: 0; justify-content: space-evenly;" ><img src="../static/images/variations/c4b852d2412c.png" alt="r5" style="width: 30%;"><img src="../static/images/variations/reddoraman.png" alt="r5" style="width: 30%;"><img src="../static/images/variations/reddorabamboo.png" alt="r5" style="width: 30%;"></div>
+
+            </li>
+
+
+            <li>
+                <h4 id="west">Western Mahjong:</h4><p>Western Classical Mahjong is the version that was revised from the Chinese classical and was introduced in America. Bobcock made the changes in this American version in 1920s. His version was adopted and recreated by players in the later years.
+                This version was popular with military as it resembled gin rummy the card game. This version is the only one with wild cards and jokers.
+            </p>
+                <img src="../static/images/variations/joker.jpg" alt="joker" style="width:85%; border-left: 10px solid rgb(208, 245, 208);border-top: 5px solid rgb(225, 255, 225); box-shadow: 0 0 10px white;">
+            </li>
+
+        </ol>
+        <p>Of the variations available Hong Kong Mahjong is the most popular. This is due to the fact that the popularity of Mahjong is much higher in China than anywhere else. Outside of China, Japanese Mahjong is the most popular.
+            Even in the United States, Japanese Mahjong wins out over Western Mahjong. This is due to the popularity of Japanese culture in the US. In Europe, Western Mahjong has a strong community.
+        </p>
+{% endblock %}
+
+{% block footnotes %}
+    <h3>More Information:</h3>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Mahjong" target="_blank">Mahjong - Wikipedia</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Japanese_Mahjong" target="_blank">Japanese Mahjong - Wikipedia</a>
+                    </li>
+                </ul>
+{% endblock %}

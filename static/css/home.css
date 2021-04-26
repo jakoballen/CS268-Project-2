@@ -1,0 +1,35 @@
+#locations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: olivedrab;
+}
+
+#locations div{
+    flex-basis: 16%;
+    height: 45vh;
+    text-align: center;
+   
+    line-height: 45vh;
+    background-color: ivory;
+    border-left: 20px solid antiquewhite;
+    border-top: 20px solid antiquewhite;
+    border-radius: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 0;
+    font-size: x-large;
+    font-family: fantasy;
+    color: maroon;
+}
+
+#locations div:hover{
+    flex-basis: 17%;
+    height: 46vh;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#containter{
+    height:100vh;
+}

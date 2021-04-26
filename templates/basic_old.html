@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/common/favicon.ico" />
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="images/common/westwind.png" alt="west wind">
+            <img src="images/common/southwind.png" alt="south wind">
+            <p>Midwest Mahjong</p>
+            <img src="images/common/northwind.png" alt="north wind">
+            <img src="images/common/eastwind.png" alt="east wind">
+        </div>
+        <div id="nav"> 
+            <div><a href="home.html">Home</a> </div>
+            <div><a href="basic_old.html">Basics</a></div>
+            <div><a href="hands.html">Hands</a></div>
+            <div><a href="rules.html">Rules</a> </div>
+            <div><a href="scoring.html">Scoring</a> </div>
+            <div><a href="strategy.html">Strategy</a> </div>
+            <div><a href="platforms.html">Platforms</a> </div>
+            <div><a href="variations.html">Variations</a> </div>
+            <div><a href="history.html">History</a> </div>
+            <div><a href="news.html">News</a> </div>
+            <div><a href="misc.html">Misc</a> </div>
+        </div>
+        <div id="main">
+            <div id="shortcuts">
+               <p> <u>Shortcuts</u> <br>
+                <a href="#introduction">Introduction</a><br>
+                <a href="#tiles">Tiles</a><br>
+                <a href="#seats">Seats</a><br>
+                <a href="#melding">Melding</a><br>
+                <a href="#dora">Dora</a><br>
+                <a href="#riichi">Riichi</a><br>
+                <a href="#scoring">Scoring</a><br>
+                <a href="#closinghand">Closing Hand</a><br>
+                <a href="#closinggame">Closing Game</a><br>
+                </p>
+            </div>
+            <div id="content">
+                    <div ><h3 id="introduction">Introduction</h3>
+                    <p><img src="images/basics/wallsetup.jpg" alt="wall" style="width: 50%; margin: 5px 5px 5px 5px;float: left; border-left: 3px solid tan; border-bottom: 3px solid tan;">Mahjong is a tile based game played with 4 players that was made popular in most of Asia. To start a game, the tiles are placed face down and shuffled. Then, each player
+                        sits across from each other and makes a wall of tiles 17 long and 2 high. The end result should look like a square. After creating the walls, each player is assigned a cardinal direction for their seat, the importance 
+                        of which will be made clear later. The player starting at the east seat will roll a die to determine which wall to start at and from there each player will take turns pulling tiles
+                        from the designated wall until every one has 13 tiles for a starting hand. From then onward, players will take turns drawing 1 tile and discarding 1 tile from their hand until
+                        they have a valid hand which contains 4 sets of 3 and a pair.
+                    </p></div>
+                    <div><h3 id="tiles">Equipment</h3>
+                    <p>Mahjong is played with 136 tiles. There are character, dot, and bamboo tiles each numbered 1-9. A tile for the east, west, south and north. Lastly there are dragon tiles that are each marked
+                        with a color red, green and white. There are four of each tile in a complete set. Other items needed in a game of Mahjong include dice to determine seat placement and a marker to 
+                        help keep track of who is which direction. Lastly, players will need counting sticks to keep track of the point system.
+                    </p></div>
+                    <div><h3 id="seats">Seats</h3>
+                    <p>Cardinal direction matters quite a bit in Mahjong. It determines who the dealer is and what your seat wind is. The dealer is always the east wind but the seat must rotate
+                        after every complete hand. To keep track of this, either use a wheel or give the dealer a marker to indicate they are east and rotate the rest of the directions clockwise.
+                    </p></div>
+                    <div> <h3 id="melding">Melding</h3>
+                    <p>Melding is when you group your tiles in your hand to form either a 3 of a kind (pon), 4 of a kind (kan), or a sequence (chi). You can make a meld from either drawing a tile
+                        from the wall or by stealing a players discard. When stealing a discard, however, you open up your hand which lowers its total point value. A tile can only be stolen the turn it 
+                        was placed and there are rules on who can steal, for example, depending on where you're sitting and what you're waiting on. For example, you can only steal chi from the player to your left and it has 
+                        to be the tile you're waiting on to complete a meld. Pon can be called from anywhere, but like chi, you must already have 2 of the tiles to call it. If a player calls chi and a differnet
+                        player calls pon the player who called pon takes the tile.
+
+                    </p></div>
+                    <div><h3 id="dora">Dora</h3>
+                    <p>The dora tile is unique to riichi mahjong and lets the players know which tile has extra value in your hand. The way to determine the dora tile is to flip the last tile
+                        on the dead wall or the wall that is furthest from the one being drawn face up. Add one to the number that is flipped up and that is the dora tile. For every dora tile in your hand
+                        you increment its value by 1 in the final calculations. If a wind is flipped face up, then the next direction in a clockwise fashion is the dora tile. For example, if the north wind was 
+                        flipped, then the east wind would be your dora tile. If a dragon tile is flipped, then the next color alphabetically is your dora tile.
+                    </p></div>
+                    <div> <h3 id="riichi">Riichi</h3>
+                    <p>Riichi is another unique trait of riichi mahjong which allows the player to add value to their hand by betting some of their points. You can only declare riichi when you are 
+                        1 tile away from making a complete hand. Once you've declared riichi, you can no longer change your hand and must continue discarding your newly drawn tiles until you pull the 
+                        tile you are missing.
+                    </p></div>
+                    <div><h3 id="scoring">Scoring</h3>
+                    <p>All players start with 25,000 points and aim to steal points from each other by making winning hands. Not all hands are weighed equally and some are worth more points due to the 
+                        unlikelyhood of them. Hand value is weighed in han and increases depending on the type of melds you have. Han typically increment in the 1000's so 1 han will net you 1000 points
+                        but once you make it pass 5 han you get what is known as a mangan which is worth 8000 points. However, it doesn't stop there, if you get 6 han, then that is a haneman which is worth 12,000 points. 
+                        Beyond that is a baiman when you have 8 han that gets you 16,000 points and a sanbaiman when you have 11 han which gets you 24,000 points. The last hand value you can get is the rarest 
+                        which is known as a yakuman that is worth 32,000 points.
+                    </p></div>
+                    <div><h3 id="closinghand">Closing Hand</h3>
+                    <p>To close a hand the player must have 4 sets of either sequences or duplicates and their hand value must be worth at least 1 han. They can win by drawing into the wall, this is known as tsumo.
+                        When a player draws their last tile from the wall, all players must share the burden of paying him. The other way is from stealing a players discard this is known as ron. When a player 
+                    discards into a winning hand he has sole responsibility for paying out the hand value. The other possiblility for ending a hand is in a draw when no one gets a complete hand, in these circumstances
+                any player's not 1 tile away will have to pay a penalty fee the players who were by up to 1000 points.</p></div>
+                    <div><h3 id="closinggame">Closing Game</h3>
+                    <p>Each game is typically played with 4 hands as the east wind being dealer. This can change though if the lead player does not have over 30,000 points by the 4th hand. In these situations 
+                        the game continues into the south seat where now the south is dealer. If the leading player has more than 30,000 points by the end of the 4th hand then both he and the person in second 
+                        are deemed the winners of the game.
+                    </p></div>
+            </div>
+            <div id="footnotes">
+                <h3>Related Links:</h3>
+                    <ul>
+                        <li>   
+                          <a href="https://hk.asiatatler.com/life/mahjong-beginners-guide-how-to-play" target="_blank">Beginner Guide to Hong Kong/Cantonese Mahjong</a>
+                        </li>
+                        <li>
+                            <a href="https://mahjong.guide/a-beginners-guide-to-riichi-mahjong/" target="_blank">Beginner Guide to Riichi Mahjong</a>
+                        </li>
+                        <li>
+                            <a href="https://www.ymimports.com/pages/how-to-play-american-mahjong" target="_blank">How to Play American Mahjong</a>
+                       </li>
+                    </ul>
+            </div>
+        </div>
+        <footer>Midwest Mahjong</footer>
+    </div>
+</body>
+</html>

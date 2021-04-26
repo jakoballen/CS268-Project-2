@@ -1,0 +1,15 @@
+#content table, th, td{
+    background-color: ivory;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-indent: 10%;
+}
+
+#content table{
+    width: 90%;
+    margin: 5%;
+}
+
+img{
+    float:right;
+}

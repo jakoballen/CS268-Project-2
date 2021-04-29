@@ -85,4 +85,26 @@
             When the dealer goes out by discard, the discarding non-dealer pays the winner 6 × basic points.<br><br>
             The actual points given are rounded up to the nearest 100. Even if the values of han and fu are the same, the points received for self-draw wins often slightly deviate from those received for discard wins because of rounding.</p>
             </div>
+<div>
+    <h3>Score Calculator</h3>
+  <form style="margin: 15px;">
+
+      <p>Han:</p>
+      <input id="hancalc" type="text" placeholder="Total Han">
+      <p>Fu:</p>
+      <input id="fucalc" type="text" placeholder="Total Fu"><br>
+      <p>Type of win:</p>
+      <select id="wintype">
+          <option disabled selected value="">-- Choose an Option --</option>
+            <option value="Ron">Ron</option>
+            <option value="Tsumo">Tsumo</option>
+      </select><br><br>
+      <button type="button" id="calculate">Calculate</button><br><br>
+      <span id="results">0</span><br>
+      <small id="per"> per person</small>
+  </form>
+</div>
+<script type="text/javascript" src="{{
+  url_for('static', filename='js/score.js') }}"></script>
+
 {% endblock %}

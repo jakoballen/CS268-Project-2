@@ -32,6 +32,68 @@
                 <a href="#gates">Nine Gates</a><br>
 {% endblock %}
 {% block content %}
+<div>
+    <h3>Han Calculator</h3>
+                    <form>
+                        <button value="1" id="b1" type="button"  onclick="insert();"><img class="selector" id="bam1" src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile"></button>
+                        <button value="2" id="b2" type="button"  onclick="insert();"><img class="selector" id="bam2" src="../static/images/hands/bamboo2.png" alt="Image of bamboo 2 tile"></button>
+                        <button value="3" id="b3" type="button"  onclick="insert();"><img class="selector" id="bam3" src="../static/images/hands/bamboo3.png" alt="Image of bamboo 3 tile"></button>
+                        <button value="4" id="b4" type="button"  onclick="insert();"><img class="selector" id="bam4" src="../static/images/hands/bamboo4.png" alt="Image of bamboo 4 tile"></button>
+                        <button value="5" id="b5" type="button"  onclick="insert();"><img class="selector" id="bam5" src="../static/images/hands/bamboo5.png" alt="Image of bamboo 5 tile"></button>
+                        <button value="6" id="b6" type="button"  onclick="insert();"><img class="selector" id="bam6" src="../static/images/hands/bamboo6.png" alt="Image of bamboo 6 tile"></button>
+                        <button value="7" id="b7" type="button"  onclick="insert();"><img class="selector" id="bam7" src="../static/images/hands/bamboo7.png" alt="Image of bamboo 7 tile"></button>
+                        <button value="8" id="b8" type="button"  onclick="insert();"><img class="selector" id="bam8" src="../static/images/hands/bamboo8.png" alt="Image of bamboo 8 tile"></button>
+                        <button value="9" id="b9" type="button"  onclick="insert();"><img class="selector" id="bam9" src="../static/images/hands/bamboo9.png" alt="Image of bamboo 9 tile"></button>
+
+                        <button value="10" id="c1" type="button"  onclick="insert();"><img class="selector" id="cha1" src="../static/images/hands/character1.png" alt="Image of character 1 tile"></button>
+                        <button value="11" id="c2" type="button"  onclick="insert();"><img class="selector" id="cha2" src="../static/images/hands/character2.png" alt="Image of character 2 tile"></button>
+                        <button value="12" id="c3" type="button"  onclick="insert();"><img class="selector" id="cha3" src="../static/images/hands/character3.png" alt="Image of character 3 tile"></button>
+                        <button value="13" id="c4" type="button"  onclick="insert();"><img class="selector" id="cha4" src="../static/images/hands/character4.png" alt="Image of character 4 tile"></button>
+                        <button value="14" id="c5" type="button"  onclick="insert();"><img class="selector" id="cha5" src="../static/images/hands/character5.png" alt="Image of character 5 tile"></button>
+                        <button value="15" id="c6" type="button"  onclick="insert();"><img class="selector" id="cha6" src="../static/images/hands/character6.png" alt="Image of character 6 tile"></button>
+                        <button value="16" id="c7" type="button"  onclick="insert();"><img class="selector" id="cha7" src="../static/images/hands/character7.png" alt="Image of character 7 tile"></button>
+                        <button value="17" id="c8" type="button"  onclick="insert();"><img class="selector" id="cha8" src="../static/images/hands/character8.png" alt="Image of character 8 tile"></button>
+                        <button value="18" id="c9" type="button"  onclick="insert();"><img class="selector" id="cha9" src="../static/images/hands/character9.png" alt="Image of character 9 tile"></button>
+
+                        <button value="19" id="d1" type="button"  onclick="insert();"><img class="selector" id="dot1" src="../static/images/hands/dot1.png" alt="Image of dot 1 tile"></button>
+                        <button value="20" id="d2" type="button"  onclick="insert();"><img class="selector" id="dot2" src="../static/images/hands/dot2.png" alt="Image of dot 2 tile"></button>
+                        <button value="21" id="d3" type="button"  onclick="insert();"><img class="selector" id="dot3" src="../static/images/hands/dot3.png" alt="Image of dot 3 tile"></button>
+                        <button value="22" id="d4" type="button"  onclick="insert();"><img class="selector" id="dot4" src="../static/images/hands/dot4.png" alt="Image of dot 4 tile"></button>
+                        <button value="23" id="d5" type="button"  onclick="insert();"><img class="selector" id="dot5" src="../static/images/hands/dot5.png" alt="Image of dot 5 tile"></button>
+                        <button value="24" id="d6" type="button"  onclick="insert();"><img class="selector" id="dot6" src="../static/images/hands/dot6.png" alt="Image of dot 6 tile"></button>
+                        <button value="25" id="d7" type="button"  onclick="insert();"><img class="selector" id="dot7" src="../static/images/hands/dot7.png" alt="Image of dot 7 tile"></button>
+                        <button value="26" id="d8" type="button"  onclick="insert();"><img class="selector" id="dot8" src="../static/images/hands/dot8.png" alt="Image of dot 8 tile"></button>
+                        <button value="27" id="d9" type="button"  onclick="insert();"><img class="selector" id="dot9" src="../static/images/hands/dot9.png" alt="Image of dot 9 tile"></button>
+
+                        <button value="28" id="ew" type="button"  onclick="insert();"><img class="selector" id="east" src="../static/images/hands/east.png" alt="Image of east wind tile"></button>
+                        <button value="29" id="sw" type="button"  onclick="insert();"><img class="selector" id="south" src="../static/images/hands/south.png" alt="Image of south wind tile"></button>
+                        <button value="30" id="ww" type="button"  onclick="insert();"><img class="selector" id="west" src="../static/images/hands/west.png" alt="Image of west wind tile"></button>
+                        <button value="31" id="nw" type="button"  onclick="insert();"><img class="selector" id="north" src="../static/images/hands/north.png" alt="Image of north wind tile"></button>
+                        <button value="32" id="gd" type="button"  onclick="insert();"><img class="selector" id="green" src="../static/images/hands/green.png" alt="Image of green dragon tile"></button>
+                        <button value="33" id="rd" type="button"  onclick="insert();"><img class="selector" id="red" src="../static/images/hands/red.png" alt="Image of red dragon tile"></button>
+                        <button value="34" id="wd" type="button"  onclick="insert();"><img class="selector" id="white" src="../static/images/hands/white.png" alt="Image of white dragon tile"></button>
+<br><br>
+                    <div id="selection">
+                        <input id="sel1" class="selected" type="image" src="../static/images/hands/Dot1.png" alt="Image of dot 1 tile" value="19">
+                        <input id="sel2" class="selected" type="image" src="../static/images/hands/Dot2.png" alt="Image of dot 2 tile" value="20">
+                        <input id="sel3" class="selected" type="image" src="../static/images/hands/Dot3.png" alt="Image of dot 3 tile" value="21">
+                        <input id="sel4" class="selected" type="image" src="../static/images/hands/Dot4.png" alt="Image of dot 4 tile" value="22">
+                        <input id="sel5" class="selected" type="image" src="../static/images/hands/Dot5.png" alt="Image of dot 5 tile" value="23">
+                        <input id="sel6" class="selected" type="image" src="../static/images/hands/Dot6.png" alt="Image of dot 6 tile" value="24">
+                        <input id="sel7" class="selected" type="image" src="../static/images/hands/Dot7.png" alt="Image of dot 7 tile" value="25">
+                        <input id="sel8" class="selected" type="image" src="../static/images/hands/Dot8.png" alt="Image of dot 8 tile" value="26">
+                        <input id="sel9" class="selected" type="image" src="../static/images/hands/Dot9.png" alt="Image of dot 9 tile" value="27">
+                        <input id="sel10" class="selected" type="image" src="../static/images/hands/east.png" alt="Image of east tile" value="28">
+                        <input id="sel11" class="selected" type="image" src="../static/images/hands/south.png" alt="Image of south tile" value="29">
+                        <input id="sel12" class="selected" type="image" src="../static/images/hands/west.png" alt="Image of west tile" value="30">
+                        <input id="sel13" class="selected" type="image" src="../static/images/hands/north.png" alt="Image of north tile" value="31">
+                        <input id="sel14" class="selected" type="image" src="../static/images/hands/green.png" alt="Image of green dragon tile" value="32">
+                    </div><br><br>
+                         <button type="button" id="calculate">Calculate</button>
+                        Han:<span id="results">0</span><br>
+
+                    </form>
+                </div>
 
                 <div><h3 id="sevenpairs">Seven Pairs (chiitoitsu) Closed: 2 Han</h3>
                     <div class="hand"> <img src="../static/images/hands/bamboo1.png" alt="Image of bamboo 1 tile" >
@@ -280,4 +342,6 @@
                     </div>
                     <p>A hand composed of 1-1-1-2-3-4-5-6-7-8-9-9-9 of one suit, plus any other tile of the same suit.</p>
                 </div>
+
+                <script type="text/javascript" src="{{url_for('static', filename='js/hand.js') }}"></script>
 {% endblock %}

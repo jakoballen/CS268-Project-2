@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block extraStyleSheet %}<link rel="stylesheet" href="../static/css/contact.css">{% endblock %}
+
+{% block content %}
+    <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>E-mail</td>
+            <td>Message</td>
+         </thead>
+
+        {% for row in rows %}
+            <tr>
+               <td>{{row["user_name"]}}</td>
+                <td>{{row["email"]}}</td>
+                <td>{{row["message"]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

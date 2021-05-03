@@ -1,35 +1,68 @@
 #locations{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;;
     justify-content: space-around;
-    height: 100vh;
+    height: 90vh;
+
+}
+
+@media(max-width: 500px){
+    #locations{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #locations div{
+        font-size: large;
+        height: 20vh;
+    }
+
+    #locations div:hover{
+        height: 19vh;
+       font-size: x-large;
+       font-weight: bold;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 850px){
+    #locations{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #locations div{
+        font-size: large;
+        height: 20vh;
+    }
+
+    #locations div:hover{
+      height: 19vh;
+      font-size: x-large;
+      font-weight: bold;
+    }
+}
+
+body{
     background-color: olivedrab;
 }
 
 #locations div{
     flex-basis: 16%;
-    height: 45vh;
+    height: 40vh;
     text-align: center;
    
-    line-height: 45vh;
+    line-height: 30vh;
     background-color: ivory;
     border-left: 20px solid antiquewhite;
     border-top: 20px solid antiquewhite;
     border-radius: 5%;
-    margin-top: 2.5%;
-    margin-bottom: 0;
-    font-size: x-large;
+
+    margin: 3%;
+    font-size: 36px;
     font-family: fantasy;
     color: maroon;
 }
 
 #locations div:hover{
     flex-basis: 17%;
-    height: 46vh;
+    height: 39vh;
     font-size: xx-large;
     font-weight: bold;
-}
-
-#containter{
-    height:100vh;
 }

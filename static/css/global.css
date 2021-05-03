@@ -4,6 +4,22 @@ body{
     background-color: wheat;
 }
 
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#content{
+    flex: 1 0 auto;
+
+}
+
+footer{
+    flex-shrink: 0;
+}
+
 #container{
     display: flex;
     flex-direction: column;
@@ -34,10 +50,10 @@ body{
 #nav{
     display: inline-flex;
     justify-content: space-around;
-    height: auto;
+
     font-size: 20px;
     background-color: tan;
-    
+
     color: ivory;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -127,7 +143,6 @@ footer{
     line-height: 70px;
     color: ivory;
     font-size: medium;
-
     bottom: 0;
     
 }

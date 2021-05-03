@@ -31,13 +31,13 @@
             <div><a href="{{ url_for('history') }}">History</a> </div>
             <div><a href="{{ url_for('news') }}">News</a> </div>
             <div><a href="{{ url_for('misc') }}">Misc</a> </div>
+            <div><a href="{{ url_for('contact') }}">Contact Us</a> </div>
         </div>
         <div id="main">
             <div id="shortcuts">
-               <p> <u>Shortcuts</u> <br>
                    {% block shortcuts %}
+
                    {% endblock %}
-                </p>
             </div>
         <div id="content">
             {% block content %}
@@ -51,8 +51,9 @@
      </div>
         </div>
 
-        <footer>Midwest Mahjong‌‌ ‌‌ ‌‌ </footer>
+
     </div>
+ <footer>Midwest Mahjong‌‌ ‌‌ ‌‌ </footer>
    <script type="text/javascript" src="{{url_for('static', filename='js/sticky.js') }}"></script>
 </body>
 </html>

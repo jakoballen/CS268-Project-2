@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}Contact Us{% endblock %}
+{% block extraStyleSheet %}<link rel="stylesheet" href="../static/css/contact.css">{% endblock %}
+
+{% block content %}
+    <h1>Contact Us:</h1>
+    <div id="form-container">
+        <form method="POST" action="{{ url_for('contact') }}">
+
+            {{ form.csrf_token }}
+            {{ form.name.label }}<br> {{ form.name(size=20) }}<br>
+            {{ form.email.label }}<br> {{ form.email(size=20) }}<br>
+            {{ form.message.label }}<br> {{ form.message(size=20) }}<br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+{% endblock %}

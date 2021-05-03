@@ -1,6 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash
+import forms
+import sqlite3 as sql
 
 app = Flask(__name__)
+app.config['SECRET_KEY']='MWMahjong1'
+
 
 
 @app.route('/')
@@ -56,6 +60,43 @@ def strategy():
 @app.route('/variations')
 def variations():
     return render_template("variations.html")
+
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    form = forms.ContactForm()
+
+    if not form.validate():
+        flash("All fields are required")
+        return render_template("contact.html", form=form)
+    else:
+        try:
+            user_name = form.name.data
+            email = form.email.data
+            message = form.message.data
+            with sql.connect("database.db") as conn:
+                cur = conn.cursor()
+                cur.execute("INSERT INTO MESSAGES(user_name, email, message) VALUES(?, ?, ?)", (user_name, email, message))
+                conn.commit()
+                return render_template("success.html")
+        except:
+            conn.rollback()
+            return render_template("failure.html")
+        finally:
+            conn.close()
+
+
+@app.route('/list')
+def list():
+    con = sql.connect("database.db")
+    con.row_factory = sql.Row
+
+    cur = con.cursor()
+    cur.execute("select * from messages")
+
+    rows = cur.fetchall()
+    return render_template("display.html", rows=rows)
+
 
 
 if __name__ == '__main__':

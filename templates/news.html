@@ -15,6 +15,20 @@
             <p><a href="https://themahjongline.com" target="_blank"><img src="../static/images/news/linemahjong.jfif"  alt="The Mahjong Line's redesigned tiles"/></a>The Mahjong Line, a Dallas company has recently been under fire for "white washing" the game by making a new line of tiles that no longer resemble the original design. The company stated that the origninal design of the game
                 doesn't do it justice and was aiming to add a spark to the design with modern drawings to pull in more players. The mahjong community in Asia was reported as being upset considering they removed the chinese asthetic from a chinese game.
             </p>
+
+            <div id="form-container">
+                <h3>Submit Current Event:</h3>
+                <form method="POST" action="{{ url_for('news') }}" style="display: inline-block; text-align: center">
+
+                    {{ form.csrf_token }}
+                    {{ form.headline.label }} {{ form.headline(size=20) }}
+                    {{ form.url.label }} {{ form.url(size=20) }}<br>
+
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
             <div id="tournament"><h3 id="tournaments">Tournaments:</h3>
             <ul>
                 <li><a href="https://worldriichi.org/" target="_blank">Riichi</a> GMT: 03/20/2021 <br></li>

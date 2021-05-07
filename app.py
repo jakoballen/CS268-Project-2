@@ -32,9 +32,28 @@ def misc():
     return render_template("misc.html")
 
 
-@app.route('/news')
+@app.route('/news', methods=['GET', 'POST'])
 def news():
-    return render_template("news.html")
+    form = forms.NewsForm()
+
+    if not form.validate():
+        flash("All fields are required")
+        return render_template("news.html", form=form)
+    else:
+        try:
+            headline = form.headline.data
+            url = form.url.data
+            with sql.connect("database.db") as conn:
+                cur = conn.cursor()
+                cur.execute("INSERT INTO NEWS(headline, url) VALUES(?, ?)",
+                            (headline, url))
+                conn.commit()
+                return render_template("success.html")
+        except:
+            conn.rollback()
+            return render_template("failure.html")
+        finally:
+            conn.close()
 
 
 @app.route('/platforms')

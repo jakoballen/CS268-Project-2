@@ -2,6 +2,7 @@
 {% block extraStyleSheet %}<link rel="stylesheet" href="../static/css/contact.css">{% endblock %}
 
 {% block content %}
+<h1>Messages</h1>
     <table border = 1>
          <thead>
             <td>Name</td>
@@ -14,6 +15,24 @@
                <td>{{row["user_name"]}}</td>
                 <td>{{row["email"]}}</td>
                 <td>{{row["message"]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+<br>
+<h1>News</h1>>
+    <table border = 1>
+         <thead>
+            <td>Headline</td>
+            <td>URL</td>
+
+         </thead>
+
+        {% for row in rows2 %}
+            <tr>
+               <td>{{row["headline"]}}</td>
+                <td>{{row["url"]}}</td>
+
             </tr>
         {% endfor %}
     </table>

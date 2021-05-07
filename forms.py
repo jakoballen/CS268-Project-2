@@ -13,3 +13,11 @@ class ContactForm(FlaskForm):
     message = TextAreaField("Message:", [validators.DataRequired("Please enter your message")])
 
     submit = SubmitField("Send")
+
+class NewsForm(FlaskForm):
+    headline = StringField("Headline:", [validators.DataRequired("Please enter a headline")])
+
+    url = StringField("URL:", [validators.DataRequired(
+        "Please enter a url")])
+
+    submit = SubmitField("Send")

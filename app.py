@@ -114,7 +114,11 @@ def list():
     cur.execute("select * from messages")
 
     rows = cur.fetchall()
-    return render_template("display.html", rows=rows)
+    
+    cur.execute("select * from news")
+
+    rows2 = cur.fetchall()
+    return render_template("display.html", rows=rows, rows2=rows2)
 
 
 
